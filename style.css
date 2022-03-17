@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.home{
+    background: url(images/backgroundimg1.webp);
+    background-size: cover;
+    height: 100vh;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+}
+.home h1{
+ color: white;
+ padding-top: 25%;
+ 
+}
+.home{
+    color: white;
+}
+
+
