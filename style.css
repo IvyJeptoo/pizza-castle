@@ -51,12 +51,13 @@ a{
 .menu{
     border: 1px solid black;
     border-radius: 10px;
+    padding: 10px;
     height: 400px;
     width: 300px;
     flex-direction: column;    
     text-align: center;
     margin-top: 30px;
-     background: linear-gradient(to top, rgb(131, 3, 3) 20%, white);
+     background: linear-gradient(to top, rgb(138, 3, 3) 20%, white);
     background-size: 80% 160%;
    transition: all 0.8s;
    font-weight: 500;
@@ -66,7 +67,7 @@ a{
   background-position: left bottom;
   color: white;
   border: none;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgb(0, 0, 0);
 }
 .menu img{
     height: 150px;
@@ -96,5 +97,16 @@ h2{
   font-weight: 800;
   font-size: 2.4em;
   color: #34495e;
+}
+/* ABOUT US */
+.about{
+    height: 40vh;
+    color: black;    
+    
+}
+.about p{
+    text-align: center;    
+    padding: 40px;
+    
 }
 
