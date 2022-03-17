@@ -3,18 +3,38 @@
     margin: 0px;
     padding: 0px;
 }
-.home{
-    background: url(images/backgroundimg1.webp);
-    background-size: cover;
-    height: 100vh;
-}
+/* NAVBAR SECTION */
 .navbar{
     position: sticky;
     text-decoration: none;
     top: 0;
 }
+li {
+  padding: 0.5rem 1rem 0.575rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ebebeb;
+ 
+}
+li:hover {
+  background-image: url('https://scottyzen.sirv.com/Images/v/button.png');
+  background-size: 100% 100%;
+  color: #27262c;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #ef816c;
+  font-weight: bold;
+}
+li:active {
+  transform: translateY(4px);
+}
 a{
     color: black !important;
+}
+/* HOME SECTION */
+.home{
+    background: url(images/backgroundimg1.webp);
+    background-size: cover;
+    height: 100vh;
 }
 .home h1{
  color: white;
@@ -24,21 +44,29 @@ a{
 .home{
     color: white;
 }
+/* MENU SECTION */
 .menu-container{
     height: 100vh;
 }
 .menu{
     border: 1px solid black;
     border-radius: 10px;
-    /* display: flex; */
     height: 400px;
     width: 300px;
-    flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
+    flex-direction: column;    
     text-align: center;
     margin-top: 30px;
+     background: linear-gradient(to top, rgb(131, 3, 3) 20%, white);
+    background-size: 80% 160%;
+   transition: all 0.8s;
+   font-weight: 500;
     
+}
+.menu:hover{    
+  background-position: left bottom;
+  color: white;
+  border: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .menu img{
     height: 150px;
@@ -53,11 +81,20 @@ a{
     align-items: center;
     justify-content: space-evenly;
     margin-top: 20px;
-
-
+    text-align: center; 
 }
 h2{
     text-align: center;
     margin-top: 30px;
+}
+
+.plan-cost {
+  padding: 0px 10px 20px;
+}
+.plan-price {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 2.4em;
+  color: #34495e;
 }
 
