@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-weight: 500;
 }
 /* NAVBAR SECTION */
 .navbar{
@@ -41,6 +42,7 @@ a{
  padding-top: 25%;
  
 }
+
 .home{
     color: white;
 }
@@ -100,6 +102,33 @@ h2{
   font-size: 2.4em;
   color: #34495e;
 }
+/* ORDER SECTION */
+.form{
+    background-image: url(./images/about3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 5%;
+    background-color: transparent;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-left: 60%; */
+    /* justify-content: center; */
+}
+.form input{
+    width: 40%;
+    margin-left: 30%;
+}
+.form label{
+    color: white;
+    margin-left: 10%;
+}
+.btnOrder{
+    margin-top: 3%;
+    margin-left: 1.5%;
+}
 /* ABOUT US */
 .about{
     height: 40vh;
@@ -116,30 +145,24 @@ h2{
     height: 70vh;
     padding: 6%;
     border: 1px solid red;
-    margin-top: 3%;
-    /* display: flex; */
+    margin-top: 3%;    
     flex-direction: column;
     background-color: rgba(105, 9, 9, 0.959);
     background-repeat: no-repeat;
     background-size: cover;
-    /* margin-left: 30px; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    
 }
-.myForm input{
-    /* margin: 30px; */
+.myForm input{    
     width: 80%;
 }
-.btn{
+.btnContact{
     width: 20%;
     margin-top: 3%;
     margin-left: 38%;
-    /* margin: 30px; */
 }
 .message textarea{
     width: 90%;
-    margin-top: 3%;
-    /* margin: 30px; */
+    margin-top: 3%;    
 }
 
 /* footer section */
