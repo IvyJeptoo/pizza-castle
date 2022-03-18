@@ -133,7 +133,7 @@ h2{
 .btn{
     width: 20%;
     margin-top: 3%;
-    margin-left: 35%;
+    margin-left: 38%;
     /* margin: 30px; */
 }
 .message textarea{
@@ -142,3 +142,11 @@ h2{
     /* margin: 30px; */
 }
 
+/* footer section */
+.footer{
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
