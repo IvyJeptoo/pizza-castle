@@ -14,7 +14,7 @@
 
 <!-- Navbar -->
 <div class="container fixed-top">
-<nav class="navbar  navbar-expand-lg ">
+<nav id="navbar-scroll" class="navbar  navbar-expand-lg ">
     <span class="iconify" data-icon="emojione:pizza" data-width="60"></span>
     <a class="navbar-brand" href="#" style="color: rgba(105, 9, 9, 0.959) !important; font-weight: 700; font-size: x-large;">Pizza Castle</a>
   <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
@@ -28,19 +28,19 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#homePage">Home</a>
           </li> 
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Menu</a>
+            <a class="nav-link active" aria-current="page" href="#menuPage">Menu</a>
           </li>      
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Order</a>
+            <a class="nav-link active" aria-current="page" href="#orderPage">Order</a>
           </li>  
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About Us</a>
+            <a class="nav-link active" aria-current="page" href="#aboutUs">About Us</a>
           </li> 
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+            <a class="nav-link active" aria-current="page" href="#contactUs">Contact Us</a>
           </li> 
           
          
@@ -52,13 +52,13 @@
 </nav>
 </div>
 <!-- HOME SECTION-->
-<div class="container home">
+<div class="container home" id="homePage" data-spy="scroll" data-target="#navbar-scroll" data-offset="0">
   <h1 class="animate__animated animate__bounce animate__duration-30s">ALL YOU NEED IS LOVE AND PIZZA.</h1>
   <h3  style="color: red;">“My love is pizza shaped. Won’t you have a slice?  <br> It’s circular, so there’s enough to go around.” </h3>
   <h5 class="animate__animated animate__fadeInUp">Dora J. Arod</h5>
 </div>
 <!-- MENU SECTION -->
-<div class="container">
+<div class="container" id="menuPage" data-spy="scroll" data-target="#navbar-scroll" data-offset="1">
     <h2>MENU</h2>
     <div class="menuContainer">
 
@@ -106,81 +106,92 @@
 </div>
 
 <!-- ORDER SECTION -->
-<div class="container">
+<div class="container" id="orderPage" data-spy="scroll" data-target="#navbar-scroll" data-offset="2">
     <h2>ORDER</h2>
     <div class="order">
         
         <form class="form">
-            <label for="sizeList" class="form-label">Choose your preferred size:</label>
-<input class="form-control" list="pizzaSize" id="sizeList" placeholder="choose size...">
-<datalist id="pizzaSize">
-  <option value="small........500Ksh"> 
-  <option value="medium...800Ksh">
-  <option value="large........1200Ksh">
-</datalist>
-<hr>
-<label for="flavourList" class="form-label">Choose your pizza flavour:</label>
-<input class="form-control" list="pizzaFlavour" id="flavourFlavour" placeholder="choose flavour...">
-<datalist id="pizzaFlavour">
-  <option value="vegetable tikka">
+            <label class="label"> Choose your pizza size: </label>
+            <select class="form-select"  id="size"  aria-label="Default select example">
+ <option value="500"> small........500Ksh</option>
+  <option value="800">medium...800Ksh</option>
+  <option value="1200">large........1200Ksh</option>
+</select>
+            <label class="label"> Choose your pizza flavour: </label>
+                        <select class="form-select"  id="flavour"  aria-label="Default select example">
+                       <option value="vegetable tikka">vegetable tikka</option>
   <option value="chicken tikka">
   <option value="peri peri">
   <option value="BBQ">
   <option value="hawaiian">
   <option value="mushroom">
-</datalist>
-<hr>
-<label for="crustList" class="form-label">Choose your favourite crust:</label>
-<input class="form-control" list="pizzaCrust" id="crustList" placeholder="choose crust...">
-<datalist id="pizzaCrust">
-    <option value="custom.................250Ksh">
-  <option value="thin.......................100Ksh">
-  <option value="thick.....................150Ksh">
-  <option value="flatbread.............200Ksh">
-</datalist>
-<hr>
-<label for="toppingList" class="form-label">Choose your pizza toppings:</label>
-<input class="form-control" list="pizzaTopping" id="toppingList" placeholder="choose toppings...">
-<datalist id="pizzaTopping">
- <option value="chicken................200Ksh">
- <option value="beef.....................200Ksh">
+                        </select>
 
-   
-
-    
+            <label class="label"> Choose your pizza crust: </label>
+            <select class="form-select"  id="crust"  aria-label="Default select example">
+<option value="250">custom.................250Ksh</option>
+  <option value="100">thin.......................100Ksh</option>
+  <option value="150">thick.....................150Ksh</option>
+  <option value="200">flatbread.............200Ksh</option>
+            </select>
+            <label class="label"> Choose your pizza topping: </label>
+            <select class="form-select"  id="topping"  aria-label="Default select example">
+             <option value="200">chicken................200Ksh</option>
+ <option value="200">beef.....................200Ksh</option>    
 
  <option value=""></option>
-  <option value="pineapple...........150">
-    <option value="sweetcorn...........150">
-     <option value="olives...................150">
-    <option value="macon..................150">
-    <option value="mince...................150">
+  <option value="150">pineapple...........150</option>
+    <option value="150">sweetcorn...........150</option>
+     <option value="150">olives...................150</option>
+    <option value="150">macon..................150</option>
+    <option value="150">mince...................150</option>
  <option value=""></option>
- <option value="tomato................80">
- <option value="onions..................80">
- <option value="mushroom...........80">
- <option value="greenpepper.......80">
+ <option value="80">tomato................80</option>
+ <option value="80">onions..................80</option>
+ <option value="80">mushroom...........80</option>
+ <option value="80">greenpepper.......80</option>
+            </select>
+            <label class="label" for="number ">Choose number of pizza :</label>
+<input type="number" class="form-control input" id="number" placeholder="number of pizzas..." min="1" required>
+<label class="label" for="delivery ">Pick your delivery option:</label>
+<div class="radios">
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label " for="flexRadioDefault1">
+    Home Delivery
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Hand-picked
+  </label>
+</div>
+</div>
 
- 
-</datalist>
-<hr>
-<label for="number">Choose number of pizza :</label>
-<input type="number" class="form-control" id="number" placeholder="number of pizzas..." min="1" required>
-<button type="button" class="btn btnOrder btn-outline-light btn-md">Make Order</button>
+<button type="button" class="btn btnOrder btn-outline-light btn-md">Make Order</button> 
+
+
+
+
+
+
+
+
 
         </form>
 
     </div>
 </div>
 <!-- ABOUT US SECTION -->
-<div class="container ">
+<div class="container" id="aboutUs" data-spy="scroll" data-target="#navbar-scroll" data-offset="3">
     <h2>ABOUT US</h2>
     <div class="about">
     <p>Pizza Castle, a pizza shop serving hot oven-fresh pizza with its signature all-natural tomato sauce <br> and using only the freshest ingredients, <br> making a collection and variety of Pizza. It offers a wide range of toppings selection and different sizes.  <br> Pizza is a popular delicacy accross the world,<br> it is perfect for all occasions and age brackets. We also do deliveries to your desired locations at a charge or pick-ups.  <br> When you think about Pizza this of Pizza Castle.</p>
     </div>
 </div>
 <!-- CONTACT US SECTION -->
-<div class="container">
+<div class="container" id="contactUs" data-spy="scroll" data-target="#navbar-scroll" data-offset="0">
     <h2>CONTACT US</h2>
     <form class="myForm">
     
